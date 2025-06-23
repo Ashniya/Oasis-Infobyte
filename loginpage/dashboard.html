@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - GLAMORA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="m-0 p-0 overflow-x-hidden">
+
+<header class="fixed-header bg-gray-600 flex justify-between items-center px-10 py-6 text-white">
+  <div>
+    <h1 class="text-4xl font-bold">GLAMORA</h1>
+    <p class="text-sm italic">Where Fashion Meets Aura</p>
+  </div>
+
+  <div class="space-x-4">
+    <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition">Contact Us</button>
+    <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition">About Us</button>
+    <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition">My Cart</button>
+    <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition">Shop</button>
+    
+    <button onclick="logout()" class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition">Logout</button>
+  </div>
+</header>
+
+  <div class="pt-[120px] flex h-screen">
+
+    <!-- Left image -->
+    <div class="w-3/4 bg-cover bg-center flex items-center justify-center left-section">
+      <div class="bg-black bg-opacity-10 p-10 rounded text-white text-center">
+        <h2 class="text-5xl font-bold mb-4">Welcome to GLAMORA</h2>
+        <p class="text-xl">Start your shopping journey with the best fashion collections!</p>
+      </div>
+    </div>
+
+    <!-- Right image-->
+    <div class="w-1/4 bg-cover bg-center right-section slide-in">
+      
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

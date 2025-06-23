@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- <div class="bg-black bg-opacity-60 h-full w-full"> -->
+    <header class="bg-gray-400 flex justify-between items-center px-10 py-6 text-white">
+      <div>
+        <h1 class="text-4xl font-bold">GLAMORA</h1>
+        <p class="text-sm italic">Where Fashion Meets Aura</p>
+      </div>
+
+      <div class="space-x-6">
+        <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition ">Contact Us</button>
+        <button class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition">About Us</button>
+        <a href="login.html" class="bg-gray-600 text-white px-4 py-2 rounded-full hover:bg-300 transition">Sign Up</a>
+      </div>
+    </header>
+<body class="background-image bg-cover bg-full bg-no-repeat" style="background-image: url('images/Fabrics.jpg');">
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="bg-white w-4/5 max-w-4xl shadow-md flex rounded-lg overflow-hidden">
+      
+      <!-- Left: Form -->
+      <div class="w-1/2 p-8">
+        <h2 class="text-3xl font-bold mb-2">Sign up</h2>
+        <p class="text-gray-500 mb-6">Get access to the biggest brands. Become a member today.</p>
+        
+        <form id="signupForm">
+          <input type="email" id="email" placeholder="Email Address" required class="w-full p-2 mb-4 border border-gray-300 rounded"/>
+          <input type="text" id="username" placeholder="Create Username" required class="w-full p-2 mb-4 border border-gray-300 rounded"/>
+          <input type="password" id="password" placeholder="Create Password" required class="w-full p-2 mb-6 border border-gray-300 rounded"/>
+          <button type="submit" class="bg-rose-300 text-white px-4 py-2 rounded hover:bg-rose-400">Create Account</button>
+        </form>
+        <p class="text-xs text-gray-400 mt-4">By signing up, you agree to our <a href="#" class="underline">Terms & Conditions</a>.</p>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="w-1/2">
+        <img src="images/Dress.jpg" alt="Sign up" class="object-cover w-full h-85"/>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Save to localStorage for demo
+      localStorage.setItem('user', JSON.stringify({ email, username, password }));
+
+      alert('Account created successfully!');
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>

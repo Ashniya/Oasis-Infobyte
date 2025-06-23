@@ -1,0 +1,29 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.left-section {
+  background-image: url('images/dashboard1.jpg');
+}
+
+.right-section {
+  background-image: url('images/dashbord2.jpg');
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

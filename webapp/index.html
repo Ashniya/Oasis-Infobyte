@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic To-Do App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-500 via-pink-300 to-violet-500 min-h-screen flex items-center justify-center">
+  <div class="container bg-pink-100 rounded-lg shadow-lg p-8 w-96 h-[80vh] flex flex-col items-center">
+    <h1 class="text-center font-[Times_New_Roman] text-4xl mb-4">DailyDash</h1>
+    <p class="text-center font-[Times_New_Roman] text-lg mb-6">Organize Your Day, Your Way.</p>
+    <p class="text-center text-sm mb-4">Got something to do? Add it here!</p>
+    <div class="input-section flex w-full mb-6">
+      <input type="text" id="taskInput" placeholder="Add new task" 
+             class="flex-1 border border-gray-300 p-2 rounded-l focus:outline-none focus:ring-2 focus:ring-violet-400">
+      <button onclick="addTask()" 
+              class="bg-violet-500 text-white px-4 py-2 rounded-r hover:bg-violet-600 transition">Add Task</button>
+    </div>
+    <div class="task-section w-full overflow-y-auto">
+      <h2 class="text-lg font-semibold mb-2">Pending Tasks</h2>
+      <ul id="pendingTasks" class="space-y-2"></ul>
+    </div>
+    <div class="task-section w-full overflow-y-auto mt-4">
+      <h2 class="text-lg font-semibold mb-2">Completed Tasks</h2>
+      <ul id="completedTasks" class="space-y-2"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

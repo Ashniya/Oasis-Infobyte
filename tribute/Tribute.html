@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribute page</title>
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #696868cb;
+      color: #0d0d0d;
+    }
+
+      .quote {
+      font-style: italic;
+      color: #383636;
+      text-align: center;
+      margin: 20px 0;
+      }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 0;
+      background-color: #a39b9b;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .half {
+      flex: 1;
+      padding: 20px ;
+    }
+
+    .image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    h1, h2 {
+      color: #111;
+    }
+
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .dark-section {
+      background-color: #222;
+      color: #eee;
+    }
+
+    .dark-section h2 {
+      color: #fff;
+    }
+
+    .img-col1 {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .img-col2 {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .img-large {
+      width: 100%;
+      max-width: 300px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page 1: Intro -->
+  <div class="section">
+    <div class="half">
+      <img src="images/APJ Abdul Kalam.jpg" alt="Dr Kalam" class="image">
+    </div>
+    <div class="half">
+      <h1 style="font-size: 2.5em;">Dr. A.P.J. Abdul Kalam</h1>
+      <P Style="font-size:1.7em; justify-content:center;">1931–2015</P>
+      <p>Known as the Missile Man of India, Dr. Avul Pakir Jainulabdeen Abdul Kalam was not just a scientist and aerospace engineer, but also the 11th President of India. A visionary who shaped India’s missile programs and inspired millions with his humility and dreams.</p>
+    </div>
+  </div>
+
+  <!-- Page 2: Early Life & Education -->
+  <div class="section dark-section">
+    <div class="half">
+      <h2>Early Life & Education</h2>
+      <ul>
+        <li>Born on October 15, 1931, in Rameswaram, Tamil Nadu.</li>
+        <li>Full name: Avul Pakir Jainulabdeen Abdul Kalam.</li>
+        <li>Came from a humble background; father was a boat owner.</li>
+        <li>Youngest of five siblings.</li>
+        <li>Graduated in Aeronautical Engineering from Madras Institute of Technology.</li>
+      </ul>
+    </div>
+    <div class="half">
+      <h2>Scientific Career</h2>
+      <ul>
+        <p><b>ISRO & DRDO:</b></p>
+        <li>Joined DRDO in 1958; moved to ISRO in 1969.</li>
+        <li>Project Director of SLV-III – India's first indigenously made satellite launch vehicle.</li>
+        <li>Successfully launched the Rohini satellite in 1980, placing India on the global space map.</li>
+        <li>Played a key role in developing Polar Satellite Launch Vehicle (PSLV).</li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <!-- Page 3: Missile Development -->
+  <div class="section">
+    <div class="half">
+      <h2>Missile Development</h2>
+      <ul>
+        <li>Rejoined DRDO in 1982 to lead India’s missile program.</li>
+        <li>Initiated the Integrated Guided Missile Development Programme (IGMDP).</li>
+        <li>Key missiles developed:</li>
+        <ul>
+          <li>Agni – Intermediate-range ballistic missile (first launched in 1989).</li>
+          <li>Prithvi – Surface-to-surface tactical missile.</li>
+        </ul>
+      </ul>
+    </div>
+    <div class="half img-col1">
+      <img src="images/apj2.jpg" class="img-large" alt="Missile Kalam">
+    </div>
+  </div>
+
+  <!-- Page 4: Nuclear Achievements & Presidency -->
+  <div class="section dark-section">
+    <div class="half">
+      <h2>Nuclear Achievements</h2>
+      <ul>
+        <li>Served as Scientific Adviser to the Defence Minister (1992–1999).</li>
+        <li>Chief coordinator of Pokhran-II nuclear tests in 1998, making India a nuclear power.</li>
+        <li>Proposed Technology Vision 2020 – a roadmap to transform India into a developed nation.</li>
+      </ul>
+    </div>
+    <div class="half">
+      <h2>Presidency (2002–2007)</h2>
+      <ul>
+        <li>Nominated by NDA, supported across party lines including Congress.</li>
+        <li>Became the 11th President of India on July 25, 2002.</li>
+        <li>Known as “People’s President” for his humble and inspiring personality.</li>
+        <li>First scientist and bachelor to become India’s President.</li>
+        <li>Succeeded by Pratibha Patil, the first woman President of India.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Page 5: Final -->
+  <div class="section">
+    <div class="half img-col2">
+      <img src="images/Apj 3.jpg" class="img-large" alt="Final Kalam">
+    </div>
+    <div class="half">
+      <h2>Final Days & Death</h2>
+      <ul>
+        <li>Died on July 27, 2015, after collapsing during a lecture at IIM Shillong.</li>
+        <li>Cause of death: Cardiac arrest.</li>
+        <li>His passing was mourned across India and the world.</li>
+      </ul>
+      <br>
+      <p class="quote">“Dream is not that which you see while sleeping; it is something that does not let you sleep.”</p>
+      <br>
+      <p>Learn more on <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">Wikipedia</a>.</p>
+    </div>
+  </div>
+  <footer style="text-align: center;color: #a39b9b; padding: 20px; background-color:black;">
+    <p>© 2025 Created by Ashniya</p>
+</footer>
+
+</body>
+</html>
